@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51596EAC-A66A-4CAA-8D25-C127CFBDFD32}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>log4cplus</RootNamespace>
+    <ProjectName>cefwinlog</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>out\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>out\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LOG4CPLUS_BUILD_DLL;INSIDE_LOG4CPLUS;LOG4CPLUS_USE_OSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>cefclientlog\lib\osp\$(Configuration)\win32_2010</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OspLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4204 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LOG4CPLUS_BUILD_DLL;INSIDE_LOG4CPLUS;LOG4CPLUS_USE_OSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>cefclientlog\lib\osp\$(Configuration)\win32_2010</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OspLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cefclientlog\src\appender.cpp" />
+    <ClCompile Include="cefclientlog\src\appenderattachableimpl.cpp" />
+    <ClCompile Include="cefclientlog\src\configurator.cpp" />
+    <ClCompile Include="cefclientlog\src\consoleappender.cpp" />
+    <ClCompile Include="cefclientlog\src\environment.cpp" />
+    <ClCompile Include="cefclientlog\src\factory.cpp" />
+    <ClCompile Include="cefclientlog\src\fileappender.cpp" />
+    <ClCompile Include="cefclientlog\src\filter.cpp" />
+    <ClCompile Include="cefclientlog\src\global-init.cpp" />
+    <ClCompile Include="cefclientlog\src\hierarchy.cpp" />
+    <ClCompile Include="cefclientlog\src\layout.cpp" />
+    <ClCompile Include="cefclientlog\src\logger.cpp" />
+    <ClCompile Include="cefclientlog\src\loggerimpl.cpp" />
+    <ClCompile Include="cefclientlog\src\loggingevent.cpp" />
+    <ClCompile Include="cefclientlog\src\loggingmacros.cpp" />
+    <ClCompile Include="cefclientlog\src\loglevel.cpp" />
+    <ClCompile Include="cefclientlog\src\loglog.cpp" />
+    <ClCompile Include="cefclientlog\src\logloguser.cpp" />
+    <ClCompile Include="cefclientlog\src\Mutex.cpp" />
+    <ClCompile Include="cefclientlog\src\Mutex_WIN32.cpp" />
+    <ClCompile Include="cefclientlog\src\nullappender.cpp" />
+    <ClCompile Include="cefclientlog\src\objectregistry.cpp" />
+    <ClCompile Include="cefclientlog\src\ospappender.cpp" />
+    <ClCompile Include="cefclientlog\src\patternlayout.cpp" />
+    <ClCompile Include="cefclientlog\src\pointer.cpp" />
+    <ClCompile Include="cefclientlog\src\property.cpp" />
+    <ClCompile Include="cefclientlog\src\rootlogger.cpp" />
+    <ClCompile Include="cefclientlog\src\sleep.cpp" />
+    <ClCompile Include="cefclientlog\src\snprintf.cpp" />
+    <ClCompile Include="cefclientlog\src\stringhelper.cpp" />
+    <ClCompile Include="cefclientlog\src\timehelper.cpp" />
+    <ClCompile Include="cefclientlog\src\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log\appender.h" />
+    <ClInclude Include="include\log\appenderattachable.h" />
+    <ClInclude Include="include\log\appenderattachableimpl.h" />
+    <ClInclude Include="include\log\configurator.h" />
+    <ClInclude Include="include\log\consoleappender.h" />
+    <ClInclude Include="include\log\environment.h" />
+    <ClInclude Include="include\log\factory.h" />
+    <ClInclude Include="include\log\fileappender.h" />
+    <ClInclude Include="include\log\filter.h" />
+    <ClInclude Include="include\log\hierarchy.h" />
+    <ClInclude Include="include\log\internal.h" />
+    <ClInclude Include="include\log\layout.h" />
+    <ClInclude Include="include\log\logger.h" />
+    <ClInclude Include="include\log\loggerfactory.h" />
+    <ClInclude Include="include\log\loggerimpl.h" />
+    <ClInclude Include="include\log\loggingevent.h" />
+    <ClInclude Include="include\log\loggingmacros.h" />
+    <ClInclude Include="include\log\loglevel.h" />
+    <ClInclude Include="include\log\loglog.h" />
+    <ClInclude Include="include\log\logloguser.h" />
+    <ClInclude Include="include\log\nullappender.h" />
+    <ClInclude Include="include\log\objectregistry.h" />
+    <ClInclude Include="include\log\ospappender.h" />
+    <ClInclude Include="include\log\osp\osp.h" />
+    <ClInclude Include="include\log\platform.h" />
+    <ClInclude Include="include\log\pointer.h" />
+    <ClInclude Include="include\log\property.h" />
+    <ClInclude Include="include\log\rootlogger.h" />
+    <ClInclude Include="include\log\sleep.h" />
+    <ClInclude Include="include\log\snprintf.h" />
+    <ClInclude Include="include\log\stringhelper.h" />
+    <ClInclude Include="include\log\thread\Mutex.h" />
+    <ClInclude Include="include\log\thread\Mutex_WIN32.h" />
+    <ClInclude Include="include\log\thread\ScopedLock.h" />
+    <ClInclude Include="include\log\thread\tls.h" />
+    <ClInclude Include="include\log\timehelper.h" />
+    <ClInclude Include="include\log\version.h" />
+    <ClInclude Include="include\log\vld\vld.h" />
+    <ClInclude Include="include\log\vld\vldapi.h" />
+    <ClInclude Include="include\log\vld\vlddef.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

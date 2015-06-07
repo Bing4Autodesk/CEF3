@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{67da55b4-9873-413d-a279-1d3095661490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9a79495c-d2d7-4595-b7ee-1f1b7614d214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\thread">
+      <UniqueIdentifier>{56ee4600-3420-42f2-8bee-67366a93262f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\osp">
+      <UniqueIdentifier>{51e95c54-fbfb-47c8-a135-70602d0b0fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\vld">
+      <UniqueIdentifier>{c036849d-06f3-4951-bf7e-fc6f9bf76c4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cefclientlog\src\appender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\appenderattachableimpl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\configurator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\consoleappender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\environment.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\factory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\fileappender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\filter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\global-init.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\hierarchy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\layout.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\logger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\loggerimpl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\loggingevent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\loggingmacros.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\loglevel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\loglog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\logloguser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\Mutex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\Mutex_WIN32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\nullappender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\objectregistry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\ospappender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\patternlayout.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\pointer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\property.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\rootlogger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\sleep.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\snprintf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\stringhelper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\timehelper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="cefclientlog\src\version.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log\version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\appender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\appenderattachable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\appenderattachableimpl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\configurator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\consoleappender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\environment.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\factory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\fileappender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\filter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\hierarchy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\layout.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\logger.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loggerfactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loggerimpl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loggingevent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loggingmacros.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loglevel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\loglog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\logloguser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\nullappender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\objectregistry.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\ospappender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\pointer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\property.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\rootlogger.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\sleep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\snprintf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\stringhelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\timehelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\vld\vlddef.h">
+      <Filter>include\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\vld\vld.h">
+      <Filter>include\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\vld\vldapi.h">
+      <Filter>include\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\thread\Mutex.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\thread\Mutex_WIN32.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\thread\ScopedLock.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\thread\tls.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\osp\osp.h">
+      <Filter>include\osp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
